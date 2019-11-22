@@ -1,0 +1,104 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!--
+User Story #1: My tribute page should have an element with a corresponding id="main", which contains all other elements.
+User Story #2: I should see an element with a corresponding id="title", which contains a string (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug").
+User Story #3: I should see a div element with a corresponding id="img-div".
+User Story #4: Within the img-div element, I should see an img element with a corresponding id="image".
+User Story #5: Within the img-div element, I should see an element with a corresponding id="img-caption"that contains textual content describing the image shown in img-div.
+User Story #6: I should see an element with a corresponding id="tribute-info", which contains textual content describing the subject of the tribute page.
+User Story #7: I should see an a element with a corresponding id="tribute-link", which links to an outside site that contains additional information about the subject of the tribute page.
+HINT: You must give your element an attribute of target and set it to _blank in order for your link to open in a new tab (i.e. target="_blank").
+User Story #8: The img element should responsively resize, relative to the width of its parent element, without exceeding its original size.
+User Story #9: The img element should be centered within its parent element.
+You can build your project by forking this CodePen pen. Or you can use this CDN link to run the tests in any environment you like: https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>Reese's Peanut Butter Cups freecodecamp Tribute Project Page</title>
+</head>
+<body>
+    <div id="main">
+        <header>
+            <h1 id="title">REESE'S</h1>
+        </header>
+        <div id="img-div">
+            <img id="image" src="images/reeses_cups_stack.jpg" alt="Reese's Peanut Butter Cups">
+            <p id="img-caption">NOT SORRY</p>
+        </div>
+        <div id="tribute-info">
+            <p class="a">REESE'S Peanut Butter Cups</p>
+            <p class="b">Reese's Peanut Butter Cups are an American candy consisting of a milk, white, or dark chocolate cup filled with peanut cream.</p>
+            <p align="center"><img src="images/reeses_peanutbutter_cups_2pack.png" alt="Reese's Peanut Butter Cups 2-pack"></p>
+            <div id="nutrition1">
+                <div class="c1">220</div>
+                <div class="c1">4.5</div>
+                <div class="c1">150</div>
+                <div class="c2">22</div>
+                <div class="c1">Calories</div>
+                <div class="c1">Sat Fat (g)</div>
+                <div class="c1">Sodium (mg)</div>
+                <div class="c2">Sugars (g)</div>
+            </div>
+            <br>
+            <div id="nutrition2">
+                <div class="r0">Nutrition Facts</div>
+                <div class="r1" style="border-bottom: none">1 servings per container</div>
+                <div class="r1" style="border-bottom: none"></div>
+                <div class="r1" style="border-bottom: 8px solid rgb(255, 82, 0)"><b>Serving Size</b></div>
+                <div class="r1" style="text-align: right; border-bottom: 8px solid rgb(255, 82, 0)"><b>1 package (42g)</b></div>
+                <div class="r1" style="border-bottom: none">Amount per serving</div>
+                <div class="r1" style="border-bottom: none"></div>
+                <div class="r2" style="border-bottom: 8px solid rgb(255, 82, 0)">Calories</div>
+                <div class="r2" style="text-align: right; border-bottom: 8px solid rgb(255, 82, 0)">220</div>
+                <div class="r1"></div>
+                <div class="r1" style="text-align: right">% Daily Value*</div>
+                <div class="r1"><b>Total Fat</b> &nbsp &nbsp 13g</div>
+                <div class="r1" style="text-align: right"><b>20%</b></div>
+                <div class="r1" style="text-indent: 20px">Saturated Fat &nbsp &nbsp 4.5g</div>
+                <div class="r1" style="text-align: right"><b>23%</b></div>
+                <div class="r1" style="text-indent: 20px">Trans Fat &nbsp &nbsp 0g</div>
+                <div class="r1"></div>
+                <div class="r1"><b>Cholesterol</b> &nbsp &nbsp <5mg</div>
+                <div class="r1" style="text-align: right"><b>1%</b></div>
+                <div class="r1"><b>Sodium</b> &nbsp &nbsp 150mg</div>
+                <div class="r1" style="text-align: right"><b>6%</b></div>
+                <div class="r1"><b>Total Carbohydrate</b> &nbsp &nbsp 24g</div>
+                <div class="r1" style="text-align: right"><b>8%</b></div>
+                <div class="r1" style="text-indent: 20px">Dietary Fiber &nbsp &nbsp 2g</div>
+                <div class="r1" style="text-align: right"><b>6%</b></div>
+                <div class="r1" style="text-indent: 20px">Total Sugars &nbsp &nbsp 22g</div>
+                <div class="r1"></div>
+                <div class="r1" style="border-bottom: 6px solid rgb(255, 82, 0)"><b>Protein</b> &nbsp &nbsp 5g</div>
+                <div class="r1" style="border-bottom: 6px solid rgb(255, 82, 0)"></div>
+                <div class="r1">Vitamin D &nbsp &nbsp 6.5iu</div>
+                <div class="r1" style="text-align: right"><b>0%</b></div>
+                <div class="r1">Calcium &nbsp &nbsp 39.8mg</div>
+                <div class="r1" style="text-align: right"><b>4%</b></div>
+                <div class="r1">Iron &nbsp &nbsp 1.2mg</div>
+                <div class="r1" style="text-align: right"><b>6%</b></div>
+                <div class="r1" style="border-bottom: 6px solid rgb(255, 82, 0)">Potassium &nbsp &nbsp 160mg</div>
+                <div class="r1" style="text-align: right; border-bottom: 6px solid rgb(255, 82, 0)"><b>4%</b></div>
+                <div class="r3">* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.</div>
+            </div>
+            <p align="center"><a href="https://smartlabel.hersheys.com/00034000004409-0005" target="_blank">SmartLabel</a></p>
+            <br><br>
+            <p class="a">History</p>
+            <p><a href="https://en.wikipedia.org/wiki/Reese%27s_Peanut_Butter_Cups" target="_blank">Reese's Peanut Butter Cups Wikipedia</a></p>
+            <p class="b">In 1923, The H.B. Reese Candy Company was established in the basement of Reese's home in Hershey, Pennsylvania.</p>
+            <p class="b">Reese's Peanut Butter Cups were originally introduced on November 15, 1928.</p>
+            <p class="b">On July 2, 1963, the Reese brothers merged the H.B. Reese Candy Company with the Hershey Chocolate Corporation in a tax-free stock-for-stock merger. In 1969, only 6 years after the Reese/Hershey merger, Reese's Peanut Butter Cups became The Hershey Company's top seller.</p>
+            <p class="b">As of October 2017 in the U.S. convenience store channel, Reese's was the largest confection brand by far: it was 62% larger than the next brand, with more households purchasing Reese's than any other confection brand across the United States.</p>
+            <br><br>
+        </div>
+        <footer>
+            <a href="https://www.hersheys.com/reeses/en_us/home.html" id="tribute-link" target="_blank"><b>Reese's Official Website</b></a>
+        </footer>
+    </div>
+</body>
+
+</html>
